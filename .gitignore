@@ -1,0 +1,53 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+*.egg
+*.egg-info/
+dist/
+build/
+.env
+.venv/
+venv/
+env/
+
+# VSCode/PyCharm
+.vscode/
+.idea/
+
+# Poetry
+poetry.lock
+
+# Jupyter Notebooks
+.ipynb_checkpoints/
+
+# Logs
+*.log
+
+# Dados e Modelos
+data/
+!data/raw/.gitkeep  # mantém a pasta vazia versionada
+models/
+!models/.gitkeep
+
+# DVC
+*.dvc
+.cache/
+.dvc/tmp/
+.dvc/cache/
+.dvc/plots/
+.dvc/experiments/
+
+# MLflow
+mlruns/
+mlruns.db
+
+# Docker
+*.tar
+*.img
+*.pid
+
+# Makefile
+Makefile

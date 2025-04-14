@@ -1,0 +1,10 @@
+stages:
+  train:
+    cmd: poetry run python src/training/train.py
+    deps:
+      - src/training/train.py
+      - src/data_prep/preprocess.py
+      - data/raw/data.csv
+      - params.yaml
+    outs:
+      - models/model.pkl
